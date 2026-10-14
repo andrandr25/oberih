@@ -8,7 +8,7 @@
 | Device firmware | GL 4.8.5 (recommended); GL 4.3 supported |
 | Software | Oberih 2.6 and later, channel "Stable". Before version 2.7 the router menu calls it **Mudi Core** |
 | Package in the plug-in list | `luci-app-mudi` |
-| Document edition | 1.3, 2026-10-14 |
+| Document edition | 1.1, 2026-10-14 |
 
 This document describes how to install Oberih on a GL-E750 router and set up a protected connection. Every technical term is explained in plain words where it first appears. The document is updated with each Oberih release; see section 10 for the change history.
 
@@ -257,7 +257,5 @@ Do not send VPN account numbers, passwords or configuration files to support.
 
 | Edition | Date | Oberih version | Changes |
 |---|---|---|---|
-| 1.3 | 2026-10-14 | 2.6, 2.7 | Official name: anonymization module Oberih (Ukrainian «Оберіг») |
-| 1.2 | 2026-10-14 | 2.6, 2.7 | Notes for versions before 2.7, where the menu item is called Mudi Core |
-| 1.1 | 2026-10-06 | 2.7.0 | New name: Oberih (formerly Mudi Core). Leak test from the devices' side, VPN history, diagnostics for support, link to the guide; English edition |
-| 1.0 | 2026-10-06 | 2.6.x | First edition (Ukrainian) |
+| 1.1 | 2026-10-14 | 2.6, 2.7 | Name: anonymization module Oberih (formerly Mudi Core), with notes for versions before 2.7. Leak test from the devices' side, VPN history, diagnostics for support, link to the guide. English edition |
+| 1.0 | 2026-10-06 | 2.6 | First edition (Ukrainian) |
