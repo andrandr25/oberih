@@ -1,4 +1,4 @@
-# Anonymization module OberiH. Installation and Setup Guide
+# Anonymization module Oberih. Installation and Setup Guide
 
 Українська версія: [README.md](README.md)
 
@@ -6,23 +6,23 @@
 |---|---|
 | Device | GL.iNet GL-E750 (Mudi V2) |
 | Device firmware | GL 4.8.5 (recommended); GL 4.3 supported |
-| Software | OberiH 2.6 and later, channel "Stable". Before version 2.7 the router menu calls it **Mudi Core** |
+| Software | Oberih 2.6 and later, channel "Stable". Before version 2.7 the router menu calls it **Mudi Core** |
 | Package in the plug-in list | `luci-app-mudi` |
 | Document edition | 1.3, 2026-10-14 |
 
-This document describes how to install OberiH on a GL-E750 router and set up a protected connection. Every technical term is explained in plain words where it first appears. The document is updated with each OberiH release; see section 10 for the change history.
+This document describes how to install Oberih on a GL-E750 router and set up a protected connection. Every technical term is explained in plain words where it first appears. The document is updated with each Oberih release; see section 10 for the change history.
 
 ---
 
-## 1. What OberiH is
+## 1. What Oberih is
 
-The **anonymization module OberiH** (Ukrainian: «ОберіГ», "a protective charm") is installed as a plug-in (in plain words: an add-on program) for the admin panel of the GL-E750 router. It is built into the standard GL panel and does three things:
+The **anonymization module Oberih** (Ukrainian: «Оберіг», "a protective charm") is installed as a plug-in (in plain words: an add-on program) for the admin panel of the GL-E750 router. It is built into the standard GL panel and does three things:
 
 1. **Protected connection through a VPN** (in plain words: all internet traffic of your devices goes through an encrypted channel to a VPN server, so neither your mobile carrier nor the network you are connected to can see which sites you open).
 2. **VPN failover** (in plain words: if one VPN server stops working, the router moves to another one by itself).
 3. **Protection checklist** (in plain words: the router shows what is set up correctly and what is not, and fixes it with one button).
 
-OberiH makes every setting through GL's own mechanisms, so the GL panel shows the same values as OberiH.
+Oberih makes every setting through GL's own mechanisms, so the GL panel shows the same values as Oberih.
 
 ---
 
@@ -46,7 +46,7 @@ OberiH makes every setting through GL's own mechanisms, so the GL panel shows th
 | Firmware | The router's main program from GL.iNet |
 | Plug-in | An additional program installed on top of the firmware |
 | Plug-in source | An internet address the router downloads the plug-in from |
-| Update channel | Where the router gets new OberiH versions. "Stable": tested versions for everyday use |
+| Update channel | Where the router gets new Oberih versions. "Stable": tested versions for everyday use |
 | VPN | An encrypted channel between the router and a VPN server; hides your traffic from the carrier and other networks |
 | WireGuard | The modern VPN protocol the router uses |
 | VPN node | One VPN server the router can connect to |
@@ -54,7 +54,7 @@ OberiH makes every setting through GL's own mechanisms, so the GL panel shows th
 | Kill switch | Blocking internet for your devices while the VPN is not working, so traffic never goes around the VPN |
 | Cloudflare WARP | A free VPN by Cloudflare; the router registers its own account automatically |
 | SSID | The name of the router's Wi-Fi network |
-| Device ID | The router's identifier; printed on the sticker underneath, shown in the GL panel and in OberiH. Needed when you contact support |
+| Device ID | The router's identifier; printed on the sticker underneath, shown in the GL panel and in Oberih. Needed when you contact support |
 
 ---
 
@@ -77,16 +77,16 @@ In plain words: the admin password protects the router's settings. Write it down
 
 Do not turn the router off during a firmware upgrade. It takes 3–5 minutes; the router then restarts and you need to join its Wi-Fi again.
 
-In plain words: OberiH is tested on 4.8.5. On other versions it works, but any feature whose compatibility is not confirmed is switched off automatically, with the reason shown.
+In plain words: Oberih is tested on 4.8.5. On other versions it works, but any feature whose compatibility is not confirmed is switched off automatically, with the reason shown.
 
 ### 4.3. Connecting the router to the internet
 
-The router needs its own internet access to download OberiH.
+The router needs its own internet access to download Oberih.
 
 - **SIM card:** insert a SIM card with mobile data. The router connects automatically.
 - **Wi-Fi (Repeater):** in **INTERNET**, connect the router to an existing Wi-Fi network.
 
-### 4.4. Adding the OberiH source
+### 4.4. Adding the Oberih source
 
 1. Open **APPLICATIONS → Plug-ins**.
 2. Click **Manage Sources**, then **Add**.
@@ -99,16 +99,16 @@ The router needs its own internet access to download OberiH.
 
 4. Save.
 
-In plain words: you tell the router where to get OberiH. Every OberiH version carries a digital signature; the router installs only versions with a valid signature.
+In plain words: you tell the router where to get Oberih. Every Oberih version carries a digital signature; the router installs only versions with a valid signature.
 
-### 4.5. Installing OberiH
+### 4.5. Installing Oberih
 
 1. On the **Plug-ins** page click **Update** so the router downloads the list of plug-ins. Wait up to 30 seconds.
 2. Search for `luci-app-mudi`.
 3. Click **Install**. Installation takes up to 1 minute.
 4. Reload the browser page.
 
-**OberiH** appears in the menu (in versions before 2.7: **Mudi Core**). The setup wizard starts when you open it for the first time.
+**Oberih** appears in the menu (in versions before 2.7: **Mudi Core**). The setup wizard starts when you open it for the first time.
 
 ---
 
@@ -157,7 +157,7 @@ After saving, the router restarts its Wi-Fi and your phone or computer disconnec
 
 ### 5.5. Step "Done"
 
-Setup is complete. OberiH opens its main page with the protection status.
+Setup is complete. Oberih opens its main page with the protection status.
 
 ---
 
@@ -167,7 +167,7 @@ After setup the router needs nothing from you. Below are features you may need.
 
 ### 6.1. Protection status
 
-The top of the OberiH page shows a protection score and five indicators: identity, VPN, DNS, leak test, Wi-Fi range. **Fix All Issues** applies the recommended settings.
+The top of the Oberih page shows a protection score and five indicators: identity, VPN, DNS, leak test, Wi-Fi range. **Fix All Issues** applies the recommended settings.
 
 **Run Leak Test** (from version 2.7) checks not only the router itself but what a device on your network sees: for a few seconds the router creates a temporary virtual device and checks which IP address it reaches the internet from.
 
@@ -203,7 +203,7 @@ Some Wi-Fi networks require a login through a browser page. While the VPN is on,
 
 After **Stop VPN** the router does not turn the VPN on by itself until you connect a node.
 
-### 6.5. Updating OberiH
+### 6.5. Updating Oberih
 
 Section **Updates**.
 
@@ -222,7 +222,7 @@ Every update carries a digital signature that is checked before installation. If
 | Symptom | Possible cause | Action |
 |---|---|---|
 | No connection to the router after the "Wi-Fi" step | The Wi-Fi name and password were changed | Join the network with the new name |
-| OberiH is missing from the menu | The page was not reloaded after installation, or a version before 2.7 is installed | Reload the browser page; before 2.7 the item is called **Mudi Core**; on GL 4.3 the item is at the bottom of the menu |
+| Oberih is missing from the menu | The page was not reloaded after installation, or a version before 2.7 is installed | Reload the browser page; before 2.7 the item is called **Mudi Core**; on GL 4.3 the item is at the bottom of the menu |
 | `luci-app-mudi` is not found | The plug-in list was not refreshed, or the router has no internet | Check the router's internet (step 4.3), click **Update** on the plug-ins page |
 | Devices have no internet, the VPN does not connect | **Block internet past the VPN** is on and no node answers | Check the router's internet; click **Check All Nodes**; if needed, **Stop VPN** |
 | A hotel login page does not open | The VPN blocks it | Section 6.4 |
@@ -236,10 +236,10 @@ This guide also opens from the router: **Support** → **Guide** (from version 2
 
 Before contacting support, prepare:
 
-1. **Device ID**: on the OberiH page, section **Support**, or on the sticker underneath the router.
+1. **Device ID**: on the Oberih page, section **Support**, or on the sticker underneath the router.
 2. A description: what happens, since when, after which actions.
 3. Diagnostics: **Support** → **Copy diagnostics** (from version 2.7), paste the text into your message.
-4. If possible, a screenshot of the OberiH page.
+4. If possible, a screenshot of the Oberih page.
 
 Do not send VPN account numbers, passwords or configuration files to support.
 
@@ -247,17 +247,17 @@ Do not send VPN account numbers, passwords or configuration files to support.
 
 ## 9. Data security
 
-- OberiH does not send your traffic, passwords or VPN account number to support or to the update server.
-- When checking for updates, the router tells the update server the OberiH version, the model, the firmware version and the Device ID, so support can see which routers have updated.
+- Oberih does not send your traffic, passwords or VPN account number to support or to the update server.
+- When checking for updates, the router tells the update server the Oberih version, the model, the firmware version and the Device ID, so support can see which routers have updated.
 - VPN keys are stored on the router only.
 
 ---
 
 ## 10. Document changes
 
-| Edition | Date | OberiH version | Changes |
+| Edition | Date | Oberih version | Changes |
 |---|---|---|---|
-| 1.3 | 2026-10-14 | 2.6, 2.7 | Official name: anonymization module OberiH (Ukrainian «ОберіГ») |
+| 1.3 | 2026-10-14 | 2.6, 2.7 | Official name: anonymization module Oberih (Ukrainian «Оберіг») |
 | 1.2 | 2026-10-14 | 2.6, 2.7 | Notes for versions before 2.7, where the menu item is called Mudi Core |
-| 1.1 | 2026-10-06 | 2.7.0 | New name: OberiH (formerly Mudi Core). Leak test from the devices' side, VPN history, diagnostics for support, link to the guide; English edition |
+| 1.1 | 2026-10-06 | 2.7.0 | New name: Oberih (formerly Mudi Core). Leak test from the devices' side, VPN history, diagnostics for support, link to the guide; English edition |
 | 1.0 | 2026-10-06 | 2.6.x | First edition (Ukrainian) |
